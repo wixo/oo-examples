@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>O.o</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+
+	<h1>Object.observe()</h1>
+
+	<div id="lechart" class="lechart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+	<h2 class="js-score js-score-1" data-ng-model="opt1">0</h2>
+	<h2 class="js-score js-score-2" data-ng-model="opt2">0</h2>
+	<h2 class="js-score js-score-3" data-ng-model="opt3">0</h2>
+
+	<button class="btn btn-primary js-btn-vote js-btn-vote-1">Windows</button>
+	<button class="btn btn-primary js-btn-vote js-btn-vote-2">OSX</button>
+	<button class="btn btn-primary js-btn-vote js-btn-vote-3">Linux</button>
+
+	<br>
+
+	<div class="form-group">
+		<label>Nombre</label>
+		<input type="text" class="form-control" data-ng-model="firstName">
+	</div>
+
+	<div class="form-group">
+		<label>Apellido</label>
+		<input type="text" class="form-control" data-ng-model="lastName">
+	</div>
+
+	<div class="form-group">
+		<label>Edad</label>
+		<input type="number" class="form-control" data-ng-model="age">
+	</div>
+
+	<div class="form-group">
+		<label>Email</label>
+		<input type="email" class="form-control" data-ng-model="email">
+	</div>
+
+	<div class="form-group">
+		<label>Casa</label>
+		<select class="form-control" data-ng-model="house">
+			<option value="Lannister">Lannister</option>
+			<option value="Stark">Stark</option>
+			<option value="Targaryen">Targaryen</option>
+			<option value="Greyjoy">Greyjoy</option>
+		</select>
+	</div>
+
+	<div class="jumbotron">
+		<dl>
+			<dt>Nombre</dt>
+			<dd>
+				<span data-ng-model="firstName"></span>
+				<span data-ng-model="lastName"></span>
+			</dd>
+			<dt>Edad</dt>
+			<dd>
+				<span data-ng-model="age"></span>
+			</dd>
+			<dt>Email</dt>
+			<dd>
+				<span data-ng-model="email"></span>
+			</dd>
+			<dt>Color</dt>
+			<dd>
+				<span data-ng-model="house"></span>
+			</dd>
+		</dl>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//cdn.firebase.com/js/client/1.0.19/firebase.js"></script>
+	<script src="//code.highcharts.com/highcharts.js"></script>
+	<script src="charts.js"></script>
+
+</body>
+</html>
